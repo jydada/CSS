@@ -16,8 +16,6 @@ The code in this progject will reproduce the results in our paper submitted to B
 * Prostate lumen segmentation (PLSeg)
 * Epithelium & stroma segmentation (EPSTSeg)
 
-If you don't want to downlad the data and just want to see the codes and resutls, that is okay, because all intermediate and final results are already included.
-
 
 # Methods
 The CSS pipeline comprises three parts: 1) A multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotation; 2) A multi-scale learning (MSL) model is employed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII; 3) We develop a new graph-based feature called bag-of-edge histogram and distance (BOEHD) for discriminating Stages IV-V from Stages I-III.
