@@ -19,7 +19,6 @@ The code in this progject will reproduce the results in our paper submitted to B
 
 # Methods
 The CSS pipeline comprises three parts: 1) A multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotation; 2) A multi-scale learning (MSL) model is employed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII; 3) We develop a new graph-based feature called bag-of-edge histogram and distance (BOEHD) for discriminating Stages IV-V from Stages I-III.
-# Downloading the histological images of mouse testicular cross-section
 
 # Experiment setup
 * Experiment 1: Seminiferous tubule segmentation
