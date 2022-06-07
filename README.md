@@ -5,9 +5,9 @@ The code in this progject will reproduce the results in our paper submitted to B
 
 ## Outline
 
-*Method Overview
-*Downloading histological images
-*How to run code
-*Contact information
+* Method Overview
+* Downloading histological images
+* How to run code
+* Contact information
 
 # Method overview
