@@ -3,11 +3,11 @@ In this paper, we present a novel computerized spermatogenesis staging (CSS) pip
 
 The code in this progject will reproduce the results in our paper submitted to Bioinformatics, "Multi-task learning based histomorphological analysis for mouse testicular cross-sections: towards computerized spermatogenesis staging". Code is written in matlab and python.
 
-Outline
+## Outline
 
-Method Overview
-Downloading histological images
-How to run code
-Contact information
+*Method Overview
+*Downloading histological images
+*How to run code
+*Contact information
 
 # Method overview
