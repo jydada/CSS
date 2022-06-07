@@ -6,8 +6,15 @@ The code in this progject will reproduce the results in our paper submitted to B
 ## Outline
 
 * Method Overview
-* Downloading histological images
+* Downloading the histological images of mouse testicular cross-section
 * How to run code
 * Contact information
 
 # Method overview
+
+
+
+# Downloading the histological images of mouse testicular cross-section
+
+
+# How to run code
