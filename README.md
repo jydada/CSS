@@ -5,13 +5,18 @@ The code in this progject will reproduce the results in our paper submitted to B
 
 ## Outline
 
-* Downloading the histological images of mouse testicular cross-section
+* Dataset
 * Methods
 * How to run code
 * Contact information
 * 
-# Downloading the histological images of mouse testicular cross-section
-Image data can be downloaded at here (3.37GB). If you don't want to downlad the data and just want to see the codes and resutls, that is okay, because all intermediate and final results are already included.
+# Dataset 
+* Downloading the histological images of mouse testicular cross-section
+* Multi-organ Nucleus Segmentation (MoNuseg) Challenge
+* Prostate lumen segmentation (PLSeg)
+* Epithelium & stroma segmentation (EPSTSeg)
+
+If you don't want to downlad the data and just want to see the codes and resutls, that is okay, because all intermediate and final results are already included.
 
 
 # Methods
@@ -19,10 +24,10 @@ The CSS pipeline comprises three parts: 1) A multi-task learning (MTL) model is 
 # Downloading the histological images of mouse testicular cross-section
 
 # Experiment setup
-## Experiment 1: Seminiferous tubule segmentation
-## Experiment 2: Multi-scale learning (MSL) based Resnet-50 model for distinguish Stages I-V from Stages VI-XII
-## Experiment 3: Multi-task learning (MTL) based CSNet model for segmenting the multiple testicular cells (MTCs) in a seminiferous tubule
-## Experiment 4: BOEHD features extraction and classifer construction
+* Experiment 1: Seminiferous tubule segmentation
+* Experiment 2: Multi-scale learning (MSL) based Resnet-50 model for distinguish Stages I-V from Stages VI-XII
+* Experiment 3: Multi-task learning (MTL) based CSNet model for segmenting the multiple testicular cells (MTCs) in a seminiferous tubule
+* Experiment 4: BOEHD features extraction and classifer construction
 
 
 # Contact information
