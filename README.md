@@ -7,9 +7,9 @@ The code in this progject will reproduce the results in our paper submitted to B
 
 * Dataset
 * Methods
-* How to run code
+* Experiment setup
 * Contact information
-* 
+
 # Dataset 
 * Downloading the histological images of mouse testicular cross-section
 * Multi-organ Nucleus Segmentation (MoNuseg) Challenge
