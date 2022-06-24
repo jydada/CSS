@@ -1,16 +1,16 @@
 clc;clear all;
 
-imagepath='C:\Users\luhd\Desktop\1\';
-maskpath='E:\png_masks\';
+imagepath='.\images\';
+maskpath='.\masks\';
 
 
 content=dir([imagepath,'*.tif']);
 
 dSize=4;  %nuclear type
 % -define edge patterns
-[rs, cs] = find(triu(ones(dSize))); %triu()È¡ÖµÉÏÈı½Çº¯Êı (ËùÓĞÀà±ğµÄ×éºÏ)
+[rs, cs] = find(triu(ones(dSize))); %triu()å–å€¼ä¸Šä¸‰è§’å‡½æ•° (æ‰€æœ‰ç±»åˆ«çš„ç»„åˆ)
 patterns = [rs, cs];
-patterns = unique(patterns, 'rows');% C = unique(A)£º·µ»ØµÄÊÇºÍAÖĞÒ»ÑùµÄÖµ£¬µ«ÊÇÃ»ÓĞÖØ¸´ÔªËØ¡£²úÉúµÄ½á¹ûÏòÁ¿°´ÉıĞòÅÅĞò¡£
+patterns = unique(patterns, 'rows');% C = unique(A)ï¼šè¿”å›çš„æ˜¯å’ŒAä¸­ä¸€æ ·çš„å€¼ï¼Œä½†æ˜¯æ²¡æœ‰é‡å¤å…ƒç´ ã€‚äº§ç”Ÿçš„ç»“æœå‘é‡æŒ‰å‡åºæ’åºã€‚
 nPatt = size(patterns, 1);
 
 nList = numel(content);
