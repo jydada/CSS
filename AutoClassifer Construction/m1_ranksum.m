@@ -4,13 +4,11 @@
 clear
 tic
 
-addpath('../tools')
+addpath('./tools')
 
-% load('../data/allData.mat', 'iu_ccImFeas', 'iu_trImFeas');
-% load('../data/imFeaName.mat');
+
 load('./feats_train.mat', 'iu_I_IIIfeats', 'iu_IV_Vfeats');
-% load('./iu_I_IIIfeats.mat');
-% load('./iu_IV_Vfeats.mat');
+
 load('./imFeaName.mat');
 
 nFeas = numel(imFeaName);
