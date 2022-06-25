@@ -11,7 +11,7 @@ The code in this progject will reproduce the results in our paper submitted to B
 * Contact information
 
 # Dataset 
-* Downloading the histological images of mouse testicular cross-section
+* Mouse testicular cross-sections
 * Multi-organ Nucleus Segmentation (MoNuseg) Challenge
 * Prostate lumen segmentation (PLSeg)
 * Epithelium & stroma segmentation (EPSTSeg)
