@@ -51,37 +51,37 @@ sensitivity_KNN=TP/(TP+FN);
 specificity_KNN=TN/(TN+FP);
 hold on;
 clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
-%% RF
- model = TreeBagger(100,train_data,train_target);
-[predict_label,decision_values,~]= predict(model,test_data);
- for j=1:size(predict_label)
-        a(j,1)=(isequal(predict_label(j,1),test_target(j,1)));
-        test_label(j,1)=test_target(j,1);
- end
- TP=0;TN=0;FP=0;FN=0;
-for i=1:size(predict_label,1)
-    if isequal(predict_label(i,1),test_label(i,1))==1
-        if isequal(predict_label{i,1},'pos')
-            TP=TP+1;
-        else
-            TN=TN+1;
-        end
-    elseif isequal(predict_label{i,1},'pos')
-            FP=FP+1;
-        else
-            FN=FN+1;
-    end
-end
-
-[X,Y,T,AUC_RF] = perfcurve(test_label,decision_values(:,2),'pos');
-plot(X,Y,'g','linewidth',1)
-xlabel('False positive rate'); ylabel('True positive rate')
-title('ROC for classification by different classifers')
-accuracy_RF=sum(a(:))/size(a,1);
-sensitivity_RF=TP/(TP+FN);
-specificity_RF=TN/(TN+FP);
-hold on;
-clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
+% %% RF
+%  model = TreeBagger(100,train_data,train_target);
+% [predict_label,decision_values,~]= predict(model,test_data);
+%  for j=1:size(predict_label)
+%         a(j,1)=(isequal(predict_label(j,1),test_target(j,1)));
+%         test_label(j,1)=test_target(j,1);
+%  end
+%  TP=0;TN=0;FP=0;FN=0;
+% for i=1:size(predict_label,1)
+%     if isequal(predict_label(i,1),test_label(i,1))==1
+%         if isequal(predict_label{i,1},'pos')
+%             TP=TP+1;
+%         else
+%             TN=TN+1;
+%         end
+%     elseif isequal(predict_label{i,1},'pos')
+%             FP=FP+1;
+%         else
+%             FN=FN+1;
+%     end
+% end
+% 
+% [X,Y,T,AUC_RF] = perfcurve(test_label,decision_values(:,2),'pos');
+% plot(X,Y,'g','linewidth',1)
+% xlabel('False positive rate'); ylabel('True positive rate')
+% title('ROC for classification by different classifers')
+% accuracy_RF=sum(a(:))/size(a,1);
+% sensitivity_RF=TP/(TP+FN);
+% specificity_RF=TN/(TN+FP);
+% hold on;
+% clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
  %% LDA
     model = ClassificationDiscriminant.fit(train_data, train_target,'DiscrimType','diaglinear');
 [predict_label,decision_values,~]= predict(model,test_data);
@@ -113,38 +113,38 @@ sensitivity_LDA=TP/(TP+FN);
 specificity_LDA=TN/(TN+FP);
 hold on;
 clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
-% %% QDA
-%     model = ClassificationDiscriminant.fit(train_data, train_target,'DiscrimType','diagquadratic');
-% [predict_label,decision_values,~]= predict(model,test_data);
-%  for j=1:size(predict_label)
-%         a(j,1)=(isequal(predict_label(j,1),test_target(j,1)));
-%         test_label(j,1)=test_target(j,1);
-%  end
-%  TP=0;TN=0;FP=0;FN=0;
-% for i=1:size(predict_label,1)
-%     if isequal(predict_label(i,1),test_label(i,1))==1
-%         if isequal(predict_label{i,1},'pos')
-%             TP=TP+1;
-%         else
-%             TN=TN+1;
-%         end
-%     elseif isequal(predict_label{i,1},'pos')
-%             FP=FP+1;
-%         else
-%             FN=FN+1;
-%     end
-% end
-% 
-% [X,Y,T,AUC_QDA] = perfcurve(test_label,decision_values(:,2),'pos');
-% plot(X,Y,'m','linewidth',1)
-% xlabel('False positive rate'); ylabel('True positive rate')
-% title('ROC for classification by different classifers')
-% accuracy_QDA=sum(a(:))/size(a,1);
-% sensitivity_QDA=TP/(TP+FN);
-% specificity_QDA=TN/(TN+FP);
-% % auc_mrmr=plot_roc_V2(decision_values,label,'g');
-% hold on;
-% clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
+%% QDA
+    model = ClassificationDiscriminant.fit(train_data, train_target,'DiscrimType','diagquadratic');
+[predict_label,decision_values,~]= predict(model,test_data);
+ for j=1:size(predict_label)
+        a(j,1)=(isequal(predict_label(j,1),test_target(j,1)));
+        test_label(j,1)=test_target(j,1);
+ end
+ TP=0;TN=0;FP=0;FN=0;
+for i=1:size(predict_label,1)
+    if isequal(predict_label(i,1),test_label(i,1))==1
+        if isequal(predict_label{i,1},'pos')
+            TP=TP+1;
+        else
+            TN=TN+1;
+        end
+    elseif isequal(predict_label{i,1},'pos')
+            FP=FP+1;
+        else
+            FN=FN+1;
+    end
+end
+
+[X,Y,T,AUC_QDA] = perfcurve(test_label,decision_values(:,2),'pos');
+plot(X,Y,'m','linewidth',1)
+xlabel('False positive rate'); ylabel('True positive rate')
+title('ROC for classification by different classifers')
+accuracy_QDA=sum(a(:))/size(a,1);
+sensitivity_QDA=TP/(TP+FN);
+specificity_QDA=TN/(TN+FP);
+% auc_mrmr=plot_roc_V2(decision_values,label,'g');
+hold on;
+clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
 %% SVM
     SVMModel  = fitcsvm(train_data,train_target,'ClassNames',{'neg','pos'});
 [predict_label,decision_values,~]= predict(SVMModel,test_data);
@@ -168,7 +168,7 @@ for i=1:size(predict_label,1)
 end
 
 [X,Y,T,AUC_SVM] = perfcurve(test_label,decision_values(:,2),'pos');
-plot(X,Y,'k','linewidth',1)
+plot(X,Y,'g','linewidth',1)
 xlabel('False positive rate'); ylabel('True positive rate')
 title('ROC for classification by different classifers')
 accuracy_SVM=sum(a(:))/size(a,1);
@@ -178,7 +178,7 @@ specificity_SVM=TN/(TN+FP);
 hold on;
 clear predict_label;clear test_label;clear decision_values;clear a;clear model;clear scores;
 %% plot
-hLe = legend({['KNN (AUC=' num2str(AUC_KNN) ')'],['RF (AUC=' num2str(AUC_RF)  ')'],['LDA (AUC=' num2str(AUC_LDA)  ')'],['SVM (AUC='  num2str(AUC_SVM)  ')']},...
+hLe = legend({['KNN (AUC=' num2str(AUC_KNN) ')'],['LDA (AUC=' num2str(AUC_LDA)  ')'],['QDA (AUC=' num2str(AUC_QDA)  ')'],['SVM (AUC='  num2str(AUC_SVM)  ')']},...
     'location', 'southeast');
 hLe.FontSize = 10;
 saveas(gcf,'./RocTest.tif');
