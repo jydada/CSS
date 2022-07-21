@@ -2,7 +2,7 @@ import torchvision
 import torch.nn.functional as F 
 from torch import nn
 from config import config
-import pretrainedmodels as pm
+import senet as se_resnet50
 from resnet import resnet50
 def generate_model():
     class DenseModel(nn.Module):
@@ -37,7 +37,7 @@ def generate_model():
 def get_net():
     # #return MyModel(torchvision.models.resnet101(pretrained = True))
     # model = torchvision.models.resnet50(pretrained = True)
-    model = pm.se_resnet50(pretrained='imagenet')
+    model = se_resnet50(pretrained='imagenet')
     # model = torchvision.models.resnet18(pretrained = True)
     print(model)
     in_features = model.last_linear.in_features
