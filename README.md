@@ -26,7 +26,7 @@ The CSS pipeline comprises four parts:
 
 # Experiment setup
 * Experiment 1: Seminiferous tubule segmentation
-* Experiment 2: Multi-scale learning (MSL) based Resnet-50 model for distinguish Stages I-V from Stages VI-XII
+* Experiment 2: Multi-scale learning (MSL) based SE-Resnet50 model for distinguish Stages I-V from Stages VI-XII
 * Experiment 3: Multi-task learning (MTL) based CSNet model for segmenting the multiple testicular cells (MTCs) in a seminiferous tubule
 * Experiment 4: Quantitative image-derived features extraction and classifer construction
 
