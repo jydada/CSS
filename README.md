@@ -20,6 +20,7 @@ The code in this progject will reproduce the results in our paper submitted to B
 # Methods
 The CSS pipeline comprises four parts: 
 1) Seminiferous tubule segmentation is developed based on Channel and Spatial attention net (CSNet) at x10 resolution
+![Fig1](https://github.com/jydada/CSS/tree/main/MTL-MTCs%20Segmentation/STseg.png)
 2) A multi-scale learning (MSL) model is developed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII
 3) A multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotation
 4) We develop a novel set of image-derived features for discriminating Stages IV-V from Stages I-III
