@@ -1,5 +1,5 @@
 # CSS
-In this paper, we present a novel computerized spermatogenesis staging (CSS) pipeline for identifying Stages IV-V. First, a multi-scale learning (MSL) model is employed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII. Then, a multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotations. Finally, we develop 204-dimensional quantitative image-derived features for discriminating Stages IV-V from Stages I-III.
+In this paper, we present a novel computerized spermatogenesis staging (CSS) pipeline for identifying Stages I-III from Stages IV-V. First, a multi-scale learning (MSL) model is employed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII. Then, a multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotations. Finally, we develop 204-dimensional quantitative image-derived features for discriminating Stages I-III from Stages IV-V.
 
 The code in this progject will reproduce the results in our paper submitted to Bioinformatics, "A novel pipeline for mouse testicular computerized spermatogenesis staging". Code is written in matlab and python.
 
