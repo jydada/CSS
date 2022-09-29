@@ -24,7 +24,7 @@ The CSS pipeline comprises four parts:
 2) A multi-scale learning (MSL) model is developed to integrate local and global seminiferous tubule information to distinguish Stages I-V from Stages VI-XII
 ![image](https://github.com/jydada/CSS/blob/main/MSL-classification%20for%20Stages%20I-V/MSL.jpg)
 3) A multi-task learning (MTL) model is developed to segment the multiple testicular cells (MTCs) without exhaustive requirement for human annotation
-![image](https://github.com/jydada/CSS/blob/main/MTL-MTCs%20Segmentation/MTL.jpg)
+![image](https://github.com/jydada/CSS/blob/main/MTL-MTCs%20Segmentation/MTL_1.jpg)
 4) We develop a novel set of image-derived features for discriminating Stages IV-V from Stages I-III
 ![image](https://github.com/jydada/CSS/blob/main/Image-derived%20features/feature.jpg)
 
